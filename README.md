@@ -23,3 +23,22 @@ docker run --rm --mount type=bind,src=$PWD,dst=/root/build -it  grobmeier/asciid
 
 You can also use the create-docker-container.sh or create-word.sh files to run the commands.
 
+## Choose a different theme for code highlighting
+
+Currently, Espresso is the default code highlighter.
+To create your Word documents with different highlighters, please run
+the following command:
+
+```
+./create-word-with-theme.sh tango test.adoc
+```
+
+You can replace `tango` with:
+
+* tango
+* haddock
+* espresso
+* zenburn
+* kate
+* monochrome
+* breezedark

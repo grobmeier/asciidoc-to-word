@@ -9,5 +9,7 @@ COPY resources/run.sh /root
 
 WORKDIR /root/build
 
+ENV theme espresso
+
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
-ENTRYPOINT ["sh", "-c", "/root/run.sh $0"]
+ENTRYPOINT ["sh", "-c", "/root/run.sh ${theme} $0"]
